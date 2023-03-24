@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #bdc1c6;
+	background-color: #3c4043;
+
+    overflow-x: hidden;
+}
+
+header {
+    height: 70px;
+    background-color: #202124;
+    border-radius: 0px 0px 15px 15px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+main {
+    background-color: #202124;
+    min-height: calc(100vh - 136px);
+    margin: 3px 0px;
+    padding: 15px 25px;
+}
+
+footer {
+    height: 60px;
+    background-color: #202124;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+header a,
+footer a,
+footer p{
+	text-decoration: none;
+	color:  #bdc1c6;
+    font-size: 20px;
+}
+
+main p{
+    font-size: 18px;
+}
+
+footer a, footer p{
+    font-size: 18px;
+}
+
+#scrollBtn{
+    display: none;
+    position: fixed;
+    bottom: 65px;
+    right: 30px;
+    z-index: 99;
+    padding: 3px;
+    background-color: rgba(189, 193, 198, 0.2);
+    border-radius: 10px;
+}
+
+#scrollBtn:hover{
+    background-color: rgba(189, 193, 198, 0.5);
+}
+
+#scrollBtn img{
+    height: 50px;
+    width: 50px;
+}
+
+.header-navbar-current{
+	text-decoration: underline;
+}
+
+.header-navbar{
+	margin-right: 10px;
+}
+
+
+.header-title:hover{
+	color: #a1afc7;
+}
+
+.nav-link{
+	margin-right: 15px;
+}
+
+main .title{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.photo-container, .video-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+.photo-block{
+    width: 32%;
+    margin: 10px 5px;
+    padding: 7px;
+}
+
+.video-block{
+    margin: 10px 25px;
+    width: 45%;
+    padding: 15px;
+}
+
+.photo-block, .video-block{
+    background-color: #3c4043;
+    text-align: center;
+}
+
+.photo-text, .video-text{
+    align-content: center;
+    padding: 5px 3px;
+}
+
+.photo-block img, .video-block iframe{
+    flex-shrink: 0;
+    height: 315px;
+    max-width: 100%;
+}
+
+.p-text{
+    margin-top: 10px;
+}
+
+.nav-link:hover{
+	color: #e3e3e3;
+}
